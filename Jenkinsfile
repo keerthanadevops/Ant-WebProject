@@ -6,7 +6,7 @@ try{
     }
    
         stage('build'){
-        sh 'ant -f build-mt.xml'
+        bat 'ant -f build-mt.xml'
     }
      stage('Test'){
       /*  sh 'mvn test' */
@@ -38,7 +38,7 @@ try{
     }
   }
 }
-/*catch(error){
+catch(error){
    echo 'Some error occured, Please verify' 
    throw error
-}*/
+}

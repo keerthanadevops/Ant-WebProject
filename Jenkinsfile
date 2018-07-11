@@ -5,10 +5,10 @@ try{
          git branch: 'master', credentialsId: 'bitbucket', url: 'https://github.com/devopstrainingblr/Ant-WebProject.git'
     }
     stage('Test'){
-        sh 'mvn test'
+       bat 'mvn test'
     }
     stage('Package'){
-        sh 'mvn package'
+        bat 'mvn package'
     }
     stage('Deploy-dev'){
         echo 'Deployed to dev'

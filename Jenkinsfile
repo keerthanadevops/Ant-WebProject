@@ -37,7 +37,8 @@ try{
    
     }
   }
-}catch(error){
+}
+/*catch(error){
    echo 'Some error occured, Please verify' 
    throw error
-}
+}*/
